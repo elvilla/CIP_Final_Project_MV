@@ -72,7 +72,7 @@ def show_history_by_mood(music_history):
 ### Call to ChatGPT for Recommendations ###
 def call_gpt(prompt):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # or "gpt-4" / "gpt-4o" if your account has access
+        model="gpt-3.5-turbo",  # we can change this to a different model
         temperature= 0.9,
         messages=[
             {"role": "user", "content": prompt}
